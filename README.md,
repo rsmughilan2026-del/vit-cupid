@@ -1,0 +1,45 @@
+VIT Cupid ♥
+
+VIT Cupid is a secure, campus-exclusive social and matching platform engineered for students across all Vellore Institute of Technology (VIT) campuses (Vellore, Chennai, Bhopal, and AP).
+
+Designed to foster genuine student connections in a trusted environment, the platform restricts access exclusively to verified institutional email domains (@vitstudent.ac.in, @vitbhopal.ac.in, @vitapstudent.ac.in), ensuring every active user belongs to the student community.
+
+🛠️ Tech Stack
+
+Frontend: Single-file responsive architecture (index.html) using HTML5, Tailwind CSS (via CDN), and Vanilla JavaScript.
+
+Backend & Database: Supabase (PostgreSQL, Auth, Real-time Subscriptions, and Storage).
+
+Hosting & CI/CD: Vercel (zero-downtime continuous deployment via GitHub).
+
+Styling & Theme: Custom Velvet Rose (#12080E) and Sunset Blush (#FFF5F7) aesthetic with WebP image compression.
+
+🚀 Key Features
+
+Domain-Locked 6-Digit OTP Auth: Passwordless authentication restricted strictly to official VIT student email domains.
+
+All-Campus Scope Switcher: Seamlessly filter discovery feeds between Vellore, Chennai, Bhopal, and AP.
+
+Blind Vibe Mode: Option to blur profile photos until users match, prioritizing prompts and shared campus interests.
+
+Campus Pulse & Whisper Wall: Real-time micro-meets (IRL Hangouts) and anonymous crush confessions.
+
+Real-Time Peer-to-Peer Chat: Instant messaging powered by Supabase Real-Time channels with campus icebreaker chips.
+
+Profile Boosting ("Spotlight"): Architecture hooks to prioritize boosted profiles in discovery queues.
+
+Holymath & Co. Branding: Official footer attribution and secure student verification badges.
+
+⚙️ Quick Setup & Deployment
+
+Clone or Create Repository: Create a new public repository on GitHub named vit-cupid.
+
+Configure Supabase: Create a Supabase project, execute your table schemas (profiles, swipes, matches, messages, hangouts), and ensure RLS policies are active.
+
+Update Credentials: Open index.html and verify your Supabase URL and Publishable Key:
+
+const SUPABASE_URL = 'https://YOUR_PROJECT_ID.supabase.co';
+const SUPABASE_KEY = 'sb_publishable_...';
+
+
+Deploy to Vercel: Import your GitHub repository into Vercel and click Deploy. Configure your Vercel production URL in your Supabase Auth Site URL settings.
